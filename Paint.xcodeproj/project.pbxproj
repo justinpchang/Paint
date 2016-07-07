@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0FF6D4C1D23086500216AE5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D0FF6D4B1D23086500216AE5 /* main.cpp */; };
+		D0FF6D551D2308F000216AE5 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FF6D541D2308F000216AE5 /* SDL2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D04A4E831D247EC40078351E /* Shapes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shapes; sourceTree = "<group>"; };
+		D0E2D9721D24166C007E772B /* MouseVars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseVars.h; sourceTree = "<group>"; };
+		D0E2D9741D2445D1007E772B /* DynList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DynList; sourceTree = "<group>"; };
 		D0FF6D481D23086500216AE5 /* Paint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Paint; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FF6D4B1D23086500216AE5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D0FF6D541D2308F000216AE5 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FF6D551D2308F000216AE5 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,7 @@
 		D0FF6D3F1D23086500216AE5 = {
 			isa = PBXGroup;
 			children = (
+				D0FF6D541D2308F000216AE5 /* SDL2.framework */,
 				D0FF6D4A1D23086500216AE5 /* Paint */,
 				D0FF6D491D23086500216AE5 /* Products */,
 			);
@@ -58,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				D0FF6D4B1D23086500216AE5 /* main.cpp */,
+				D0E2D9721D24166C007E772B /* MouseVars.h */,
+				D04A4E831D247EC40078351E /* Shapes */,
+				D0E2D9741D2445D1007E772B /* DynList */,
 			);
 			path = Paint;
 			sourceTree = "<group>";
@@ -209,6 +219,14 @@
 		D0FF6D501D23086500216AE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/SDL2.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +234,14 @@
 		D0FF6D511D23086500216AE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks/SDL2.framework/Versions/A",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +265,7 @@
 				D0FF6D511D23086500216AE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
